@@ -1,0 +1,6701 @@
+{
+  "status": "Statische Analyse; kein FME-Lauf; keine ILI- oder GDB-Validierung",
+  "paket_sha256": "e34db2002998b04addd07fb1f6ecc9a5c635f08f150beb5892d8accd414e4877",
+  "profile": {
+    "NUP": {
+      "datei": "filegdbV2_2_xtf_final.fmw",
+      "sha256_bereinigte_datei": "9d5d187418aa373c2bd2d2eb449b335ce12fca48a343dcf1a1fe100b7cce11b6",
+      "reader_datasets": [
+        {
+          "ROLE": "READER",
+          "FORMAT": "ch.ehi.fme.Main",
+          "DATASET": "$(Stammdaten)",
+          "KEYWORD": "ch.ehi.fme.Main_3",
+          "ENABLED": "true",
+          "COORDSYS": ""
+        },
+        {
+          "ROLE": "READER",
+          "FORMAT": "FILEGDB",
+          "DATASET": "$(SourceDataset_FILEGDB_4)",
+          "KEYWORD": "FILEGDB_1",
+          "ENABLED": "true",
+          "COORDSYS": ""
+        },
+        {
+          "ROLE": "WRITER",
+          "FORMAT": "ch.ehi.fme.Main",
+          "DATASET": "$(Speicherort_XTF)",
+          "KEYWORD": "ch.ehi.fme.Main_1",
+          "ENABLED": "true",
+          "COORDSYS": ""
+        }
+      ],
+      "feature_schema": [
+        {
+          "id": "2",
+          "zeile": 790,
+          "richtung": "reader",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Stammdaten.Katalogeintrag",
+          "keyword": "ch.ehi.fme.Main_3",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(40)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "3",
+          "zeile": 817,
+          "richtung": "reader",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Stammdaten.Typ_Kanton",
+          "keyword": "ch.ehi.fme.Main_3",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "4",
+          "zeile": 845,
+          "richtung": "writer",
+          "name": "XTF_BASKETS",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_topic",
+              "fme_typ": "xtf_char(90)"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "5",
+          "zeile": 865,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Stammdaten.Lieferinhalt",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(40)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "6",
+          "zeile": 889,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.TransferMetadaten.Datenbestand",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Stand",
+              "fme_typ": "xtf_date"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rLieferinhalt",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_class",
+              "fme_typ": "xtf_char(255)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "7",
+          "zeile": 913,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Objektbezogene_Festlegung",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_coord",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "8",
+          "zeile": 935,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Wirkbereich_Linie",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_surface",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rLinienbezogene_Festlegung",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "9",
+          "zeile": 958,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Wirkbereich_Punkt",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_surface",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rObjektbezogene_Festlegung",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "10",
+          "zeile": 981,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Ueberlagernde_Festlegung",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "11",
+          "zeile": 1003,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Stammdaten.Rechtsstatus",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "12",
+          "zeile": 1026,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Linienbezogene_Festlegung",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "13",
+          "zeile": 1048,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Grundnutzung_Zonenflaeche",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_class",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "LES_Typ",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "_overlaps",
+              "fme_typ": "xtf_int32"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "14",
+          "zeile": 1074,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Typ",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Bezeichnung",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Nutzungsziffer",
+              "fme_typ": "xtf_decimal(4,2)"
+            },
+            {
+              "name": "Nutzungsziffer_Art",
+              "fme_typ": "xtf_char(40)"
+            },
+            {
+              "name": "Doklink",
+              "fme_typ": "xtf_char(1023)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "Symbol",
+              "fme_typ": "xtf_buffer"
+            },
+            {
+              "name": "rTyp_Kanton",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rVerbindlichkeit",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "15",
+          "zeile": 1104,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Stammdaten.Typ_Kanton",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "16",
+          "zeile": 1129,
+          "richtung": "writer",
+          "name": "SZ_Nutzungsplanung_kommunal_V2.Stammdaten.Verbindlichkeit",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "303",
+          "zeile": 1152,
+          "richtung": "reader",
+          "name": "NUP/Grundnutzung_Zonenflaeche",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": null,
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "LES_Typ",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "304",
+          "zeile": 1183,
+          "richtung": "reader",
+          "name": "NUP/Linienbezogene_Festlegung",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": null,
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "305",
+          "zeile": 1213,
+          "richtung": "reader",
+          "name": "NUP/Objektbezogene_Festlegung",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": null,
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "306",
+          "zeile": 1243,
+          "richtung": "reader",
+          "name": "NUP/Ueberlagernde_Festlegung",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": null,
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "307",
+          "zeile": 1273,
+          "richtung": "reader",
+          "name": "NUP/Wirkbereich_Linie",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": null,
+          "felder": [
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "rLinienbezogene_Festlegung",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "Shape_Length",
+              "fme_typ": "double"
+            },
+            {
+              "name": "Shape_Area",
+              "fme_typ": "double"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "308",
+          "zeile": 1306,
+          "richtung": "reader",
+          "name": "NUP/Wirkbereich_Punkt",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": null,
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "rObjektbezogene_Festlegung",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "309",
+          "zeile": 1337,
+          "richtung": "reader",
+          "name": "NUP_TM_Datenbestand",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": "geodb_no_geom",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Lieferinhalt",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Stand",
+              "fme_typ": "date"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "310",
+          "zeile": 1367,
+          "richtung": "reader",
+          "name": "NUP_Typ",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": "geodb_no_geom",
+          "felder": [
+            {
+              "name": "Code_Kanton",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "Bezeichnung",
+              "fme_typ": "text(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "text(12)"
+            },
+            {
+              "name": "Verbindlichkeit",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Nutzungsziffer",
+              "fme_typ": "double"
+            },
+            {
+              "name": "Nutzungsziffer_Art",
+              "fme_typ": "text(40)"
+            },
+            {
+              "name": "GemeindeNr",
+              "fme_typ": "int"
+            },
+            {
+              "name": "Doklink",
+              "fme_typ": "text(1023)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "Symbol",
+              "fme_typ": "text(2048)"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        }
+      ],
+      "transformer": [
+        {
+          "id": "25",
+          "zeile": 2073,
+          "typ": "Creator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "26",
+          "zeile": 2100,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten  xtf_basket_id SET_TO ch.sz.a005c.geobasisdaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "27",
+          "zeile": 2129,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Nutzungsplanung_kommunal_V2.Stammdaten  xtf_basket_id SET_TO ch.sz.a005.stammdaten.2000-01-01"
+          }
+        },
+        {
+          "id": "28",
+          "zeile": 2158,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Nutzungsplanung_kommunal_V2.TransferMetadaten  xtf_basket_id SET_TO ch.sz.a005c.transfermetadaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "29",
+          "zeile": 2186,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_id RENAME_SET_DEFAULT  xtf_basket_name xtf_topic RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "30",
+          "zeile": 2209,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_id SET_TO ch.sz.a005c.transfermetadaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "31",
+          "zeile": 2241,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Lieferinhalt<closeparen> <at>Value<openparen>Name<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "32",
+          "zeile": 2339,
+          "typ": "AttributeValueMapper",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "LUT": "<at>Value<openparen>Lieferinhalt<closeparen>,<at>GetWord<openparen><at>Value<openparen>Lieferinhalt<closeparen><comma>1<closeparen>",
+            "SRC": "Lieferinhalt",
+            "VAL_ATTR": "Lieferinhalt"
+          }
+        },
+        {
+          "id": "33",
+          "zeile": 2369,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rLieferinhalt RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "34",
+          "zeile": 2396,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "35",
+          "zeile": 2427,
+          "typ": "DateTimeConverter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "DATETIME_ATTR": "Stand",
+            "IN_FORMAT": "%Y%m%d<dollar>",
+            "OUT_FORMAT": "%Y-%m-%d",
+            "REPAIR_INPUT": "YES"
+          }
+        },
+        {
+          "id": "36",
+          "zeile": 2479,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Code_Kanton<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "37",
+          "zeile": 2598,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rTyp_Kanton RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "38",
+          "zeile": 2625,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Code_Kanton,GemeindeNr,Name,SortierNr"
+          }
+        },
+        {
+          "id": "39",
+          "zeile": 2658,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "40",
+          "zeile": 2692,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Verbindlichkeit<closeparen> <at>Value<openparen>Code_Verbindlichkeit<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "41",
+          "zeile": 2808,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rVerbindlichkeit RENAME_SET_DEFAULT  Code Code_Verbindlichkeit RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "42",
+          "zeile": 2834,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Code_Verbindlichkeit,SortierNr,Verbindlichkeit,Name,OBJECTID"
+          }
+        },
+        {
+          "id": "43",
+          "zeile": 2866,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO ch.sz.a005.stammdaten.2000-01-01"
+          }
+        },
+        {
+          "id": "44",
+          "zeile": 2899,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO ch.sz.a005.stammdaten.2000-01-01"
+          }
+        },
+        {
+          "id": "45",
+          "zeile": 2931,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "CASE_INSENSITIVE_TEST <at>Value<openparen>Code<closeparen> BEGINS_WITH 13"
+          }
+        },
+        {
+          "id": "46",
+          "zeile": 2971,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "CASE_INSENSITIVE_TEST <at>Value<openparen>Code<closeparen> = AenderungMitVorwirkung\nCASE_INSENSITIVE_TEST <at>Value<openparen>Code<closeparen> = AenderungOhneVorwirkung\nCASE_INSENSITIVE_TEST <at>Value<openparen>Code<closeparen> = inKraft"
+          }
+        },
+        {
+          "id": "47",
+          "zeile": 3011,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Code<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "48",
+          "zeile": 3097,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "Code_Kanton Code_Kanton  REMOVE Code Code  NO_OP Bezeichnung Bezeichnung  REMOVE Abkuerzung Abkuerzung  REMOVE Verbindlichkeit Verbindlichkeit  REMOVE Nutzungsziffer Nutzungsziffer  REMOVE Nutzungsziffer_Art Nutzungsziffer_Art  REMOVE GemeindeNr GemeindeNr  REMOVE Doklink Doklink  REMOVE Bemerkung Bemerkung  REMOVE Symbol Symbol  REMOVE xtf_id rTyp  RENAME_SET_VALUE OBJECTID OBJECTID  REMOVE"
+          }
+        },
+        {
+          "id": "49",
+          "zeile": 3126,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "50",
+          "zeile": 3229,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rRechtsstatus RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "51",
+          "zeile": 3256,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Name,Rechtsstatus,SortierNr,xtf_basket,OBJECTID,Code"
+          }
+        },
+        {
+          "id": "52",
+          "zeile": 3282,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "53",
+          "zeile": 3309,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Lieferinhalt,OBJECTID,Code,Name,SortierNr"
+          }
+        },
+        {
+          "id": "54",
+          "zeile": 3334,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_id SET_TO ch.sz.a005c.transfermetadaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "55",
+          "zeile": 3366,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Nutzungsplanung_kommunal_V2.TransferMetadaten.Datenbestand"
+          }
+        },
+        {
+          "id": "56",
+          "zeile": 3398,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Typ"
+          }
+        },
+        {
+          "id": "57",
+          "zeile": 3437,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Grundnutzung_Zonenflaeche"
+          }
+        },
+        {
+          "id": "58",
+          "zeile": 3470,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Code<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "59",
+          "zeile": 3553,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "60",
+          "zeile": 3653,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Name,Rechtsstatus,SortierNr,xtf_basket,OBJECTID,Code"
+          }
+        },
+        {
+          "id": "61",
+          "zeile": 3678,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "62",
+          "zeile": 3704,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Ueberlagernde_Festlegung"
+          }
+        },
+        {
+          "id": "63",
+          "zeile": 3736,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Code<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "64",
+          "zeile": 3819,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "65",
+          "zeile": 3919,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Name,Rechtsstatus,SortierNr,xtf_basket,OBJECTID,Code"
+          }
+        },
+        {
+          "id": "66",
+          "zeile": 3944,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "67",
+          "zeile": 3970,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Linienbezogene_Festlegung"
+          }
+        },
+        {
+          "id": "68",
+          "zeile": 4002,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Code<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "69",
+          "zeile": 4085,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Code<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "70",
+          "zeile": 4177,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "71",
+          "zeile": 4286,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Name,Rechtsstatus,SortierNr,xtf_basket,OBJECTID,Code"
+          }
+        },
+        {
+          "id": "72",
+          "zeile": 4314,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "73",
+          "zeile": 4343,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Wirkbereich_Linie"
+          }
+        },
+        {
+          "id": "74",
+          "zeile": 4378,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "75",
+          "zeile": 4478,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Name,Rechtsstatus,SortierNr,xtf_basket,OBJECTID,Code"
+          }
+        },
+        {
+          "id": "76",
+          "zeile": 4503,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "77",
+          "zeile": 4529,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Objektbezogene_Festlegung"
+          }
+        },
+        {
+          "id": "78",
+          "zeile": 4561,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Code<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "79",
+          "zeile": 4647,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "80",
+          "zeile": 4750,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Name,Rechtsstatus,SortierNr,xtf_basket,OBJECTID,Code"
+          }
+        },
+        {
+          "id": "81",
+          "zeile": 4776,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "82",
+          "zeile": 4803,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Nutzungsplanung_kommunal_V2.Geobasisdaten.Wirkbereich_Punkt"
+          }
+        },
+        {
+          "id": "83",
+          "zeile": 4836,
+          "typ": "ArcStroker",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "STROKE_MODE": "TOLERANCE",
+            "TOLERANCE_VAL": "0.0005"
+          }
+        },
+        {
+          "id": "84",
+          "zeile": 4876,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "85",
+          "zeile": 4905,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "86",
+          "zeile": 4932,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "87",
+          "zeile": 4959,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "88",
+          "zeile": 4986,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "89",
+          "zeile": 5016,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "90",
+          "zeile": 5044,
+          "typ": "ArcStroker",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "STROKE_MODE": "TOLERANCE",
+            "TOLERANCE_VAL": "0.0005"
+          }
+        },
+        {
+          "id": "91",
+          "zeile": 5082,
+          "typ": "ArcStroker",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "STROKE_MODE": "TOLERANCE",
+            "TOLERANCE_VAL": "0.0005"
+          }
+        },
+        {
+          "id": "92",
+          "zeile": 5120,
+          "typ": "ArcStroker",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "STROKE_MODE": "TOLERANCE",
+            "TOLERANCE_VAL": "0.0005"
+          }
+        },
+        {
+          "id": "93",
+          "zeile": 5164,
+          "typ": "ArcStroker",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "STROKE_MODE": "TOLERANCE",
+            "TOLERANCE_VAL": "0.0005"
+          }
+        },
+        {
+          "id": "94",
+          "zeile": 5204,
+          "typ": "Junction",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "95",
+          "zeile": 5222,
+          "typ": "Junction",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "96",
+          "zeile": 5244,
+          "typ": "SubDocumentTransformer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "Bfs_Nr": "$(Bfs_Nr)",
+            "SUB_DOC_NAME": "Basket_Geobasisdaten"
+          }
+        },
+        {
+          "id": "97",
+          "zeile": 5277,
+          "typ": "SubDocumentTransformer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "Bfs_Nr": "$(Bfs_Nr)",
+            "SUB_DOC_NAME": "Basket_Geobasisdaten"
+          }
+        },
+        {
+          "id": "98",
+          "zeile": 5303,
+          "typ": "SubDocumentTransformer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "Bfs_Nr": "$(Bfs_Nr)",
+            "SUB_DOC_NAME": "Basket_Geobasisdaten"
+          }
+        },
+        {
+          "id": "99",
+          "zeile": 5328,
+          "typ": "SubDocumentTransformer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "Bfs_Nr": "$(Bfs_Nr)",
+            "SUB_DOC_NAME": "Basket_Geobasisdaten"
+          }
+        },
+        {
+          "id": "100",
+          "zeile": 5353,
+          "typ": "SubDocumentTransformer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "Bfs_Nr": "$(Bfs_Nr)",
+            "SUB_DOC_NAME": "Basket_Geobasisdaten"
+          }
+        },
+        {
+          "id": "101",
+          "zeile": 5378,
+          "typ": "SubDocumentTransformer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "Bfs_Nr": "$(Bfs_Nr)",
+            "SUB_DOC_NAME": "Basket_Geobasisdaten"
+          }
+        },
+        {
+          "id": "102",
+          "zeile": 5406,
+          "typ": "SubDocumentTransformer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "Bfs_Nr": "$(Bfs_Nr)",
+            "SUB_DOC_NAME": "Basket_Geobasisdaten"
+          }
+        },
+        {
+          "id": "103",
+          "zeile": 5432,
+          "typ": "AttributeValueMapper",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "DEFAULT_VALUE": "<at>Value<openparen>Rechtsstatus<closeparen>",
+            "LUT": "in<space>Kraft,inKraft,<u00c4>nderung,AenderungOhneVorwirkung,Aenderung,AenderungOhneVorwirkung",
+            "SRC": "Rechtsstatus",
+            "VAL_ATTR": "Rechtsstatus"
+          }
+        },
+        {
+          "id": "104",
+          "zeile": 5464,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "105",
+          "zeile": 5481,
+          "typ": "Junction",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "106",
+          "zeile": 5504,
+          "typ": "DuplicateFilter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "KEYATTR": "xtf_id"
+          }
+        },
+        {
+          "id": "107",
+          "zeile": 5546,
+          "typ": "Terminator",
+          "enabled": "false",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "108",
+          "zeile": 5563,
+          "typ": "AreaOnAreaOverlayer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ACCUM_ATTRS_NAME": "Use Attributes From One Feature",
+            "CLEANING_TOLERANCE": "Automatic",
+            "CONNECT_Z_MODE": "First Wins"
+          }
+        },
+        {
+          "id": "109",
+          "zeile": 5617,
+          "typ": "Dissolver",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "GROUP_BY": "xtf_id",
+            "GROUP_BY_MODE": "No",
+            "CLEANING_TOLERANCE": "Automatic",
+            "CONNECT_Z_MODE": "First Wins"
+          }
+        },
+        {
+          "id": "110",
+          "zeile": 5677,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "TEST <at>Value<openparen>Code<closeparen> >= 49.9.9"
+          }
+        },
+        {
+          "id": "111",
+          "zeile": 5716,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "112",
+          "zeile": 5732,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "TEST xtf_id ATTRIBUTE_HAS_A_VALUE \"\""
+          }
+        },
+        {
+          "id": "113",
+          "zeile": 5771,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "114",
+          "zeile": 5787,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "TEST xtf_id ATTRIBUTE_HAS_A_VALUE \"\""
+          }
+        },
+        {
+          "id": "115",
+          "zeile": 5826,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "116",
+          "zeile": 5842,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "TEST xtf_id ATTRIBUTE_HAS_A_VALUE \"\""
+          }
+        },
+        {
+          "id": "117",
+          "zeile": 5885,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "118",
+          "zeile": 5901,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "119",
+          "zeile": 5918,
+          "typ": "DuplicateFilter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "KEYATTR": "xtf_id"
+          }
+        },
+        {
+          "id": "120",
+          "zeile": 5956,
+          "typ": "Junction",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "121",
+          "zeile": 5977,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "122",
+          "zeile": 5994,
+          "typ": "DuplicateFilter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "KEYATTR": "xtf_id"
+          }
+        },
+        {
+          "id": "123",
+          "zeile": 6030,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "124",
+          "zeile": 6047,
+          "typ": "DuplicateFilter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "KEYATTR": "xtf_id"
+          }
+        },
+        {
+          "id": "125",
+          "zeile": 6083,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "126",
+          "zeile": 6100,
+          "typ": "DuplicateFilter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "KEYATTR": "xtf_id"
+          }
+        },
+        {
+          "id": "127",
+          "zeile": 6136,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "128",
+          "zeile": 6153,
+          "typ": "DuplicateFilter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "KEYATTR": "xtf_id"
+          }
+        },
+        {
+          "id": "129",
+          "zeile": 6195,
+          "typ": "DuplicateFilter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "KEYATTR": "xtf_id"
+          }
+        },
+        {
+          "id": "130",
+          "zeile": 6232,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        }
+      ],
+      "links": [
+        {
+          "IDENTIFIER": "134",
+          "SOURCE_NODE": "2",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "54",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "135",
+          "SOURCE_NODE": "2",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "41",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "136",
+          "SOURCE_NODE": "2",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "44",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "137",
+          "SOURCE_NODE": "3",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "37",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "138",
+          "SOURCE_NODE": "3",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "43",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "131",
+          "SOURCE_NODE": "25",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "26",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "132",
+          "SOURCE_NODE": "25",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "28",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "133",
+          "SOURCE_NODE": "25",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "27",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "139",
+          "SOURCE_NODE": "303",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "119",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "140",
+          "SOURCE_NODE": "304",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "124",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "141",
+          "SOURCE_NODE": "305",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "126",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "142",
+          "SOURCE_NODE": "306",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "122",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "143",
+          "SOURCE_NODE": "307",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "128",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "144",
+          "SOURCE_NODE": "308",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "129",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "145",
+          "SOURCE_NODE": "309",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "30",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "146",
+          "SOURCE_NODE": "310",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "48",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "147",
+          "SOURCE_NODE": "310",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "96",
+          "TARGET_PORT_DESC": "fi 0 Input",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "148",
+          "SOURCE_NODE": "26",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "29",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "150",
+          "SOURCE_NODE": "27",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "29",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "149",
+          "SOURCE_NODE": "28",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "29",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "151",
+          "SOURCE_NODE": "29",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "4",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "152",
+          "SOURCE_NODE": "30",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "32",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "153",
+          "SOURCE_NODE": "31",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "34",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "156",
+          "SOURCE_NODE": "32",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "31",
+          "TARGET_PORT_DESC": "fi 1 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "154",
+          "SOURCE_NODE": "33",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "31",
+          "TARGET_PORT_DESC": "fi 0 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "157",
+          "SOURCE_NODE": "34",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "35",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "155",
+          "SOURCE_NODE": "35",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "53",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "158",
+          "SOURCE_NODE": "36",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "38",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "160",
+          "SOURCE_NODE": "37",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "36",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "159",
+          "SOURCE_NODE": "38",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "39",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "162",
+          "SOURCE_NODE": "39",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "40",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "161",
+          "SOURCE_NODE": "40",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "42",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "164",
+          "SOURCE_NODE": "41",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "40",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "163",
+          "SOURCE_NODE": "42",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "56",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "165",
+          "SOURCE_NODE": "43",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "15",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "166",
+          "SOURCE_NODE": "44",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "45",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "167",
+          "SOURCE_NODE": "45",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "5",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "168",
+          "SOURCE_NODE": "46",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "11",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "169",
+          "SOURCE_NODE": "46",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "50",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "171",
+          "SOURCE_NODE": "47",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "103",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "172",
+          "SOURCE_NODE": "48",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "47",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "173",
+          "SOURCE_NODE": "48",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "94",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "170",
+          "SOURCE_NODE": "49",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "51",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "176",
+          "SOURCE_NODE": "50",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "49",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "177",
+          "SOURCE_NODE": "50",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "95",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "175",
+          "SOURCE_NODE": "51",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "52",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "174",
+          "SOURCE_NODE": "52",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "57",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "178",
+          "SOURCE_NODE": "53",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "55",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "180",
+          "SOURCE_NODE": "54",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "33",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "181",
+          "SOURCE_NODE": "55",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "6",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "179",
+          "SOURCE_NODE": "56",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "14",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "182",
+          "SOURCE_NODE": "57",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "83",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "183",
+          "SOURCE_NODE": "58",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "59",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "184",
+          "SOURCE_NODE": "59",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "60",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "185",
+          "SOURCE_NODE": "60",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "61",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "186",
+          "SOURCE_NODE": "61",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "62",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "187",
+          "SOURCE_NODE": "62",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "90",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "188",
+          "SOURCE_NODE": "63",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "64",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "189",
+          "SOURCE_NODE": "64",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "65",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "190",
+          "SOURCE_NODE": "65",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "66",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "191",
+          "SOURCE_NODE": "66",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "67",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "192",
+          "SOURCE_NODE": "67",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "91",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "193",
+          "SOURCE_NODE": "68",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "74",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "194",
+          "SOURCE_NODE": "69",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "70",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "195",
+          "SOURCE_NODE": "70",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "71",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "196",
+          "SOURCE_NODE": "71",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "72",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "197",
+          "SOURCE_NODE": "72",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "73",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "198",
+          "SOURCE_NODE": "73",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "92",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "199",
+          "SOURCE_NODE": "74",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "75",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "200",
+          "SOURCE_NODE": "75",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "76",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "201",
+          "SOURCE_NODE": "76",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "77",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "202",
+          "SOURCE_NODE": "77",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "87",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "205",
+          "SOURCE_NODE": "78",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "79",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "211",
+          "SOURCE_NODE": "79",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "80",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "217",
+          "SOURCE_NODE": "80",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "81",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "218",
+          "SOURCE_NODE": "81",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "82",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "219",
+          "SOURCE_NODE": "82",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "93",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "221",
+          "SOURCE_NODE": "83",
+          "SOURCE_PORT_DESC": "fo 0 STROKED",
+          "TARGET_NODE": "108",
+          "TARGET_PORT_DESC": "fi 0 AREA",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "224",
+          "SOURCE_NODE": "84",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "106",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "223",
+          "SOURCE_NODE": "85",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "114",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "227",
+          "SOURCE_NODE": "86",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "112",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "229",
+          "SOURCE_NODE": "87",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "7",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "203",
+          "SOURCE_NODE": "88",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "8",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "204",
+          "SOURCE_NODE": "89",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "9",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "220",
+          "SOURCE_NODE": "90",
+          "SOURCE_PORT_DESC": "fo 0 STROKED",
+          "TARGET_NODE": "85",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "226",
+          "SOURCE_NODE": "91",
+          "SOURCE_PORT_DESC": "fo 0 STROKED",
+          "TARGET_NODE": "86",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "228",
+          "SOURCE_NODE": "92",
+          "SOURCE_PORT_DESC": "fo 0 STROKED",
+          "TARGET_NODE": "88",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "230",
+          "SOURCE_NODE": "93",
+          "SOURCE_PORT_DESC": "fo 0 STROKED",
+          "TARGET_NODE": "89",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "206",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "58",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "207",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "63",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "208",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "68",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "209",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "69",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "210",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "78",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "212",
+          "SOURCE_NODE": "95",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "59",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "213",
+          "SOURCE_NODE": "95",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "70",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "214",
+          "SOURCE_NODE": "95",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "74",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "215",
+          "SOURCE_NODE": "95",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "79",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "216",
+          "SOURCE_NODE": "95",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "64",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "232",
+          "SOURCE_NODE": "96",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "36",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "233",
+          "SOURCE_NODE": "97",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "105",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "234",
+          "SOURCE_NODE": "98",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "58",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "237",
+          "SOURCE_NODE": "99",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "63",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "231",
+          "SOURCE_NODE": "100",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "68",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "236",
+          "SOURCE_NODE": "101",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "69",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "238",
+          "SOURCE_NODE": "102",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "78",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "240",
+          "SOURCE_NODE": "103",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "49",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "235",
+          "SOURCE_NODE": "105",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "47",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "241",
+          "SOURCE_NODE": "106",
+          "SOURCE_PORT_DESC": "fo 0 UNIQUE",
+          "TARGET_NODE": "116",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "243",
+          "SOURCE_NODE": "108",
+          "SOURCE_PORT_DESC": "fo 0 AREA",
+          "TARGET_NODE": "109",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "225",
+          "SOURCE_NODE": "109",
+          "SOURCE_PORT_DESC": "fo 0 AREA",
+          "TARGET_NODE": "84",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "222",
+          "SOURCE_NODE": "110",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "111",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "242",
+          "SOURCE_NODE": "112",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "12",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "244",
+          "SOURCE_NODE": "114",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "10",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "245",
+          "SOURCE_NODE": "116",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "13",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "246",
+          "SOURCE_NODE": "119",
+          "SOURCE_PORT_DESC": "fo 0 UNIQUE",
+          "TARGET_NODE": "120",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "247",
+          "SOURCE_NODE": "120",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "110",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "248",
+          "SOURCE_NODE": "120",
+          "SOURCE_PORT_DESC": "fo 0 Output",
+          "TARGET_NODE": "97",
+          "TARGET_PORT_DESC": "fi 0 Input",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "249",
+          "SOURCE_NODE": "122",
+          "SOURCE_PORT_DESC": "fo 0 UNIQUE",
+          "TARGET_NODE": "98",
+          "TARGET_PORT_DESC": "fi 0 Input",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "250",
+          "SOURCE_NODE": "124",
+          "SOURCE_PORT_DESC": "fo 0 UNIQUE",
+          "TARGET_NODE": "99",
+          "TARGET_PORT_DESC": "fi 0 Input",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "251",
+          "SOURCE_NODE": "126",
+          "SOURCE_PORT_DESC": "fo 0 UNIQUE",
+          "TARGET_NODE": "100",
+          "TARGET_PORT_DESC": "fi 0 Input",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "252",
+          "SOURCE_NODE": "128",
+          "SOURCE_PORT_DESC": "fo 0 UNIQUE",
+          "TARGET_NODE": "101",
+          "TARGET_PORT_DESC": "fi 0 Input",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "239",
+          "SOURCE_NODE": "129",
+          "SOURCE_PORT_DESC": "fo 0 UNIQUE",
+          "TARGET_NODE": "102",
+          "TARGET_PORT_DESC": "fi 0 Input",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "253",
+          "SOURCE_NODE": "45",
+          "SOURCE_PORT_DESC": "fo 1 FAILED",
+          "TARGET_NODE": "46",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "254",
+          "SOURCE_NODE": "46",
+          "SOURCE_PORT_DESC": "fo 1 FAILED",
+          "TARGET_NODE": "16",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "255",
+          "SOURCE_NODE": "49",
+          "SOURCE_PORT_DESC": "fo 1 UNMERGED_REQUESTOR",
+          "TARGET_NODE": "104",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "257",
+          "SOURCE_NODE": "106",
+          "SOURCE_PORT_DESC": "fo 1 DUPLICATE",
+          "TARGET_NODE": "107",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "258",
+          "SOURCE_NODE": "112",
+          "SOURCE_PORT_DESC": "fo 1 FAILED",
+          "TARGET_NODE": "113",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "259",
+          "SOURCE_NODE": "114",
+          "SOURCE_PORT_DESC": "fo 1 FAILED",
+          "TARGET_NODE": "115",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "260",
+          "SOURCE_NODE": "116",
+          "SOURCE_PORT_DESC": "fo 1 FAILED",
+          "TARGET_NODE": "117",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "261",
+          "SOURCE_NODE": "119",
+          "SOURCE_PORT_DESC": "fo 1 DUPLICATE",
+          "TARGET_NODE": "118",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "262",
+          "SOURCE_NODE": "122",
+          "SOURCE_PORT_DESC": "fo 1 DUPLICATE",
+          "TARGET_NODE": "121",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "263",
+          "SOURCE_NODE": "124",
+          "SOURCE_PORT_DESC": "fo 1 DUPLICATE",
+          "TARGET_NODE": "123",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "264",
+          "SOURCE_NODE": "126",
+          "SOURCE_PORT_DESC": "fo 1 DUPLICATE",
+          "TARGET_NODE": "125",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "265",
+          "SOURCE_NODE": "128",
+          "SOURCE_PORT_DESC": "fo 1 DUPLICATE",
+          "TARGET_NODE": "127",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "256",
+          "SOURCE_NODE": "129",
+          "SOURCE_PORT_DESC": "fo 1 DUPLICATE",
+          "TARGET_NODE": "130",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        }
+      ],
+      "defaults": {
+        "Bfs_Nr": {
+          "zeile": 8435,
+          "wert": "1341"
+        },
+        "Stammdaten": {
+          "zeile": 8437,
+          "wert": "http://data.geo.sz.ch/public/Themen/A005c/Stammdaten.xtf"
+        }
+      },
+      "hinweis": "FME-Schema ist keine Bestätigung des tatsächlichen GDB-Schemas. Linkerreichbarkeit allein unterscheidet nicht Requestor- und Supplier-Objekte; Ports beachten."
+    },
+    "GWR": {
+      "datei": "filegdbV2_to_xtf_GWR.fmw",
+      "sha256_bereinigte_datei": "e3de0a33668c009cb71f7bb9b2dee0d33ea322b59d1a8b714e3d359d78e4981f",
+      "reader_datasets": [
+        {
+          "ROLE": "READER",
+          "FORMAT": "ch.ehi.fme.Main",
+          "DATASET": "$(Stammdaten)",
+          "KEYWORD": "ch.ehi.fme.Main_3",
+          "ENABLED": "true",
+          "COORDSYS": null
+        },
+        {
+          "ROLE": "READER",
+          "FORMAT": "FILEGDB",
+          "DATASET": "$(SourceDataset_FILEGDB_3)",
+          "KEYWORD": "FILEGDB_2",
+          "ENABLED": "true",
+          "COORDSYS": "EPSG:2056"
+        },
+        {
+          "ROLE": "WRITER",
+          "FORMAT": "ch.ehi.fme.Main",
+          "DATASET": "$(DestDataset_ch.ehi.fme.Main)",
+          "KEYWORD": "ch.ehi.fme.Main_1",
+          "ENABLED": "true",
+          "COORDSYS": ""
+        }
+      ],
+      "feature_schema": [
+        {
+          "id": "109",
+          "zeile": 830,
+          "richtung": "writer",
+          "name": "XTF_BASKETS",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_topic",
+              "fme_typ": "xtf_char(65)"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_startstate",
+              "fme_typ": "xtf_char(250)"
+            },
+            {
+              "name": "xtf_endstate",
+              "fme_typ": "xtf_char(250)"
+            },
+            {
+              "name": "xtf_consistency",
+              "fme_typ": "xtf_char(12)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "112",
+          "zeile": 854,
+          "richtung": "writer",
+          "name": "SZ_Gewaesserraum_V2.Geobasisdaten.Gewaesserraum",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_class",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Gewaessername",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Doklink",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "113",
+          "zeile": 881,
+          "richtung": "writer",
+          "name": "SZ_Gewaesserraum_V2.Stammdaten.Rechtsstatus",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "114",
+          "zeile": 905,
+          "richtung": "writer",
+          "name": "SZ_Gewaesserraum_V2.Stammdaten.Lieferinhalt",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(40)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "115",
+          "zeile": 929,
+          "richtung": "writer",
+          "name": "SZ_Gewaesserraum_V2.TransferMetadaten.Datenbestand",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Stand",
+              "fme_typ": "xtf_date"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rLieferinhalt",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "116",
+          "zeile": 952,
+          "richtung": "writer",
+          "name": "SZ_Gewaesserraum_V2.Stammdaten.Typ",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Symbol",
+              "fme_typ": "xtf_buffer"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "120",
+          "zeile": 977,
+          "richtung": "reader",
+          "name": "GWR_Flächen",
+          "keyword": "FILEGDB_2",
+          "enabled": "true",
+          "geometrie_fme": "geodb_polygon",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Typ",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Gewaessername",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Doklink",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "123",
+          "zeile": 1010,
+          "richtung": "reader",
+          "name": "GWR_TM_Datenbestand",
+          "keyword": "FILEGDB_2",
+          "enabled": "true",
+          "geometrie_fme": "geodb_no_geom",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Lieferinhalt",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Stand",
+              "fme_typ": "date"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "127",
+          "zeile": 1041,
+          "richtung": "reader",
+          "name": "SZ_Gewaesserraum_V2.Stammdaten.Katalogeintrag",
+          "keyword": "ch.ehi.fme.Main_3",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(40)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "129",
+          "zeile": 1069,
+          "richtung": "reader",
+          "name": "SZ_Gewaesserraum_V2.Stammdaten.Typ",
+          "keyword": "ch.ehi.fme.Main_3",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Symbol",
+              "fme_typ": "xtf_buffer"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        }
+      ],
+      "transformer": [
+        {
+          "id": "11",
+          "zeile": 1343,
+          "typ": "Creator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "12",
+          "zeile": 1371,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Gewaesserraum_V2.Geobasisdaten  xtf_basket_id SET_TO ch.sz.a125b.geobasisdaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "13",
+          "zeile": 1401,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Gewaesserraum_V2.Stammdaten  xtf_basket_id SET_TO ch.sz.a125.stammdaten.2026-09-09"
+          }
+        },
+        {
+          "id": "15",
+          "zeile": 1431,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Gewaesserraum_V2.TransferMetadaten  xtf_basket_id SET_TO ch.sz.a125b.transfermetadaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "17",
+          "zeile": 1460,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_id RENAME_SET_DEFAULT  xtf_basket_name xtf_topic RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "27",
+          "zeile": 1484,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "CASE_INSENSITIVE_TEST <at>Value<openparen>Code<closeparen> BEGINS_WITH 13\nCASE_INSENSITIVE_TEST <at>Value<openparen>Name<closeparen> = Brunnen<space>Nord\nCASE_INSENSITIVE_TEST <at>Value<openparen>Name<closeparen> = Seewen<space>Schwyz"
+          }
+        },
+        {
+          "id": "26",
+          "zeile": 1526,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO ch.sz.a125.stammdaten.2026-09-09"
+          }
+        },
+        {
+          "id": "37",
+          "zeile": 1559,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO ch.sz.a125.stammdaten.2026-09-09"
+          }
+        },
+        {
+          "id": "35",
+          "zeile": 1592,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_id SET_TO ch.sz.a125b.geobasisdaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "41",
+          "zeile": 1627,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Typ<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "46",
+          "zeile": 1720,
+          "typ": "AttributeValueMapper",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "LUT": "<at>Value<openparen>Lieferinhalt<closeparen>,<at>GetWord<openparen><at>Value<openparen>Lieferinhalt<closeparen><comma>1<closeparen>",
+            "SRC": "Lieferinhalt",
+            "VAL_ATTR": "Lieferinhalt"
+          }
+        },
+        {
+          "id": "52",
+          "zeile": 1751,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rLieferinhalt RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "55",
+          "zeile": 1778,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Lieferinhalt<closeparen> <at>Value<openparen>Name<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "58",
+          "zeile": 1875,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "60",
+          "zeile": 1907,
+          "typ": "DateTimeConverter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "DATETIME_ATTR": "Stand",
+            "OUT_FORMAT": "%Y-%m-%d",
+            "REPAIR_INPUT": "YES"
+          }
+        },
+        {
+          "id": "62",
+          "zeile": 1960,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Code,Lieferinhalt,Name,OBJECTID,SortierNr"
+          }
+        },
+        {
+          "id": "64",
+          "zeile": 1986,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Gewaesserraum_V2.TransferMetadaten.Datenbestand"
+          }
+        },
+        {
+          "id": "74",
+          "zeile": 2019,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "TEST <at>Value<openparen>Code<closeparen> = AenderungMitVorwirkung\nTEST <at>Value<openparen>Code<closeparen> = AenderungOhneVorwirkung\nTEST <at>Value<openparen>Code<closeparen> = inKraft"
+          }
+        },
+        {
+          "id": "77",
+          "zeile": 2059,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO ch.sz.a125.stammdaten.2026-09-09"
+          }
+        },
+        {
+          "id": "83",
+          "zeile": 2092,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rTyp  RENAME_SET_VALUE Code Code  NO_OP Name Name  REMOVE SortierNr SortierNr  REMOVE Symbol Symbol  REMOVE Bemerkung Bemerkung  REMOVE"
+          }
+        },
+        {
+          "id": "86",
+          "zeile": 2122,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "87",
+          "zeile": 2212,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Bemerkung,Name,SortierNr,xtf_basket"
+          }
+        },
+        {
+          "id": "89",
+          "zeile": 2235,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rRechtsstatus RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "93",
+          "zeile": 2259,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Code,OBJECTID,Typ"
+          }
+        },
+        {
+          "id": "95",
+          "zeile": 2287,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Code,Rechtsstatus"
+          }
+        },
+        {
+          "id": "97",
+          "zeile": 2315,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "99",
+          "zeile": 2344,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Gewaesserraum_V2.Geobasisdaten.Gewaesserraum"
+          }
+        },
+        {
+          "id": "101",
+          "zeile": 2379,
+          "typ": "ArcStroker",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "STROKE_MODE": "TOLERANCE",
+            "TOLERANCE_VAL": "0.0005"
+          }
+        },
+        {
+          "id": "103",
+          "zeile": 2422,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "44",
+          "zeile": 2452,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_id SET_TO ch.sz.a125b.transfermetadaten.$(Bfs_Nr)"
+          }
+        }
+      ],
+      "links": [
+        {
+          "IDENTIFIER": "18",
+          "SOURCE_NODE": "11",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "12",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "19",
+          "SOURCE_NODE": "11",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "15",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "20",
+          "SOURCE_NODE": "11",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "13",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "121",
+          "SOURCE_NODE": "120",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "35",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "45",
+          "SOURCE_NODE": "123",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "44",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "29",
+          "SOURCE_NODE": "127",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "26",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "53",
+          "SOURCE_NODE": "127",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "52",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "76",
+          "SOURCE_NODE": "127",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "74",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "38",
+          "SOURCE_NODE": "129",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "37",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "108",
+          "SOURCE_NODE": "129",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "83",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "21",
+          "SOURCE_NODE": "12",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "17",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "22",
+          "SOURCE_NODE": "13",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "17",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "23",
+          "SOURCE_NODE": "15",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "17",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "106",
+          "SOURCE_NODE": "17",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "109",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "30",
+          "SOURCE_NODE": "26",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "27",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "72",
+          "SOURCE_NODE": "27",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "114",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "42",
+          "SOURCE_NODE": "35",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "41",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "118",
+          "SOURCE_NODE": "37",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "116",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "92",
+          "SOURCE_NODE": "41",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "93",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "47",
+          "SOURCE_NODE": "44",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "46",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "57",
+          "SOURCE_NODE": "46",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "55",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "56",
+          "SOURCE_NODE": "52",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "55",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "59",
+          "SOURCE_NODE": "55",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "58",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "61",
+          "SOURCE_NODE": "58",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "60",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "63",
+          "SOURCE_NODE": "60",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "62",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "65",
+          "SOURCE_NODE": "62",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "64",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "71",
+          "SOURCE_NODE": "64",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "115",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "78",
+          "SOURCE_NODE": "74",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "77",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "88",
+          "SOURCE_NODE": "77",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "87",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "117",
+          "SOURCE_NODE": "77",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "113",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "85",
+          "SOURCE_NODE": "83",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "41",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "96",
+          "SOURCE_NODE": "86",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "95",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "90",
+          "SOURCE_NODE": "87",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "89",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "91",
+          "SOURCE_NODE": "89",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "86",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "94",
+          "SOURCE_NODE": "93",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "86",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "98",
+          "SOURCE_NODE": "95",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "97",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "100",
+          "SOURCE_NODE": "97",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "99",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "102",
+          "SOURCE_NODE": "99",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "101",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "104",
+          "SOURCE_NODE": "101",
+          "SOURCE_PORT_DESC": "fo 0 STROKED",
+          "TARGET_NODE": "103",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "105",
+          "SOURCE_NODE": "103",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "112",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        }
+      ],
+      "defaults": {
+        "Bfs_Nr": {
+          "zeile": 3102,
+          "wert": "brunnen-nord"
+        },
+        "Stammdaten": {
+          "zeile": 3108,
+          "wert": "https://data.geo.sz.ch/public/Themen/A125b/Stammdaten.xtf"
+        }
+      },
+      "hinweis": "FME-Schema ist keine Bestätigung des tatsächlichen GDB-Schemas. Linkerreichbarkeit allein unterscheidet nicht Requestor- und Supplier-Objekte; Ports beachten."
+    },
+    "LES": {
+      "datei": "filegdbLESV2_2_xtf.fmw",
+      "sha256_bereinigte_datei": "31ef4e98e0827c14fe6e4ef8d9eeb27a82c67a5cb6d258d96fd83592fdb2cb94",
+      "reader_datasets": [
+        {
+          "ROLE": "READER",
+          "FORMAT": "ch.ehi.fme.Main",
+          "DATASET": "$(Stammdaten)",
+          "KEYWORD": "ch.ehi.fme.Main_3",
+          "ENABLED": "true",
+          "COORDSYS": null
+        },
+        {
+          "ROLE": "READER",
+          "FORMAT": "FILEGDB",
+          "DATASET": "$(SourceDataset_FILEGDB)",
+          "KEYWORD": "FILEGDB_2",
+          "ENABLED": "true",
+          "COORDSYS": ""
+        },
+        {
+          "ROLE": "WRITER",
+          "FORMAT": "ch.ehi.fme.Main",
+          "DATASET": "$(Speicherort_XTF)",
+          "KEYWORD": "ch.ehi.fme.Main_1",
+          "ENABLED": "true",
+          "COORDSYS": ""
+        }
+      ],
+      "feature_schema": [
+        {
+          "id": "6",
+          "zeile": 830,
+          "richtung": "writer",
+          "name": "XTF_BASKETS",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_topic",
+              "fme_typ": "xtf_char(88)"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_startstate",
+              "fme_typ": "xtf_char(250)"
+            },
+            {
+              "name": "xtf_endstate",
+              "fme_typ": "xtf_char(250)"
+            },
+            {
+              "name": "xtf_consistency",
+              "fme_typ": "xtf_char(12)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "9",
+          "zeile": 854,
+          "richtung": "writer",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Stammdaten.Typ_Kanton",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Symbol",
+              "fme_typ": "xtf_buffer"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "10",
+          "zeile": 879,
+          "richtung": "writer",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Geobasisdaten.Typ",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bezeichnung",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "xtf_char(10)"
+            },
+            {
+              "name": "Doklink",
+              "fme_typ": "xtf_char(1023)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rTyp_Kanton",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rVerbindlichkeit",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_class",
+              "fme_typ": "xtf_char(255)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "11",
+          "zeile": 907,
+          "richtung": "writer",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Stammdaten.Rechtsstatus",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "12",
+          "zeile": 932,
+          "richtung": "writer",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Geobasisdaten.Laermempfindlichkeitszone",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_class",
+              "fme_typ": "xtf_char(255)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "13",
+          "zeile": 957,
+          "richtung": "writer",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Stammdaten.Verbindlichkeit",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "14",
+          "zeile": 982,
+          "richtung": "writer",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Stammdaten.Lieferinhalt",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(40)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "15",
+          "zeile": 1007,
+          "richtung": "writer",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.TransferMetadaten.Datenbestand",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "All",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Stand",
+              "fme_typ": "xtf_date"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rLieferinhalt",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_basket",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_class",
+              "fme_typ": "xtf_char(255)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "142",
+          "zeile": 1032,
+          "richtung": "reader",
+          "name": "LES_TM_Datenbestand",
+          "keyword": "FILEGDB_2",
+          "enabled": "true",
+          "geometrie_fme": "geodb_no_geom",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Stand",
+              "fme_typ": "date"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "Lieferinhalt",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "147",
+          "zeile": 1063,
+          "richtung": "reader",
+          "name": "LES_Typ",
+          "keyword": "FILEGDB_2",
+          "enabled": "true",
+          "geometrie_fme": "geodb_no_geom",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Bezeichnung",
+              "fme_typ": "text(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "Doklink",
+              "fme_typ": "text(1023)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "Typ_Kanton",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Verbindlichkeit",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "152",
+          "zeile": 1097,
+          "richtung": "reader",
+          "name": "NUP/Grundnutzung_Zonenflaeche",
+          "keyword": "FILEGDB_2",
+          "enabled": "true",
+          "geometrie_fme": null,
+          "felder": [
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(10)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "LES_Typ",
+              "fme_typ": "text(255)"
+            },
+            {
+              "name": "SHAPE_Length",
+              "fme_typ": "double"
+            },
+            {
+              "name": "SHAPE_Area",
+              "fme_typ": "double"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "160",
+          "zeile": 1131,
+          "richtung": "reader",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Stammdaten.Typ_Kanton",
+          "keyword": "ch.ehi.fme.Main_3",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Symbol",
+              "fme_typ": "xtf_buffer"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "163",
+          "zeile": 1159,
+          "richtung": "reader",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Stammdaten.Rechtsstatus",
+          "keyword": "ch.ehi.fme.Main_3",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "165",
+          "zeile": 1187,
+          "richtung": "reader",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Stammdaten.Verbindlichkeit",
+          "keyword": "ch.ehi.fme.Main_3",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "169",
+          "zeile": 1215,
+          "richtung": "reader",
+          "name": "SZ_Laermempfindlichkeitsstufen_V2.Stammdaten.Lieferinhalt",
+          "keyword": "ch.ehi.fme.Main_3",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(40)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        }
+      ],
+      "transformer": [
+        {
+          "id": "32",
+          "zeile": 1511,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO $(BASKETgeobasisdaten).$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "37",
+          "zeile": 1545,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO $(BASKETtransfermetadaten).$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "39",
+          "zeile": 1578,
+          "typ": "DateTimeConverter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "DATETIME_ATTR": "Stand",
+            "OUT_FORMAT": "%Y-%m-%d",
+            "REPAIR_INPUT": "YES"
+          }
+        },
+        {
+          "id": "41",
+          "zeile": 1623,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Lieferinhalt<closeparen> <at>Value<openparen>Name<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "44",
+          "zeile": 1710,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rLieferinhalt  RENAME_SET_VALUE Code Code  REMOVE Name Name  NO_OP SortierNr SortierNr  REMOVE Bemerkung Bemerkung  REMOVE"
+          }
+        },
+        {
+          "id": "47",
+          "zeile": 1740,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Lieferinhalt,Name,OBJECTID"
+          }
+        },
+        {
+          "id": "43",
+          "zeile": 1766,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO $(BASKETgeobasisdaten).$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "52",
+          "zeile": 1802,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Bezeichnung<closeparen> <at>Value<openparen>Name<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "53",
+          "zeile": 1898,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rTyp_Kanton  RENAME_SET_VALUE Code Code  REMOVE Name Name  NO_OP SortierNr SortierNr  REMOVE Symbol Symbol  REMOVE"
+          }
+        },
+        {
+          "id": "57",
+          "zeile": 1928,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rVerbindlichkeit  RENAME_SET_VALUE Code Code  REMOVE Name Name  NO_OP SortierNr SortierNr  REMOVE Bemerkung Bemerkung  REMOVE"
+          }
+        },
+        {
+          "id": "58",
+          "zeile": 1958,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Verbindlichkeit<closeparen> <at>Value<openparen>Name<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "62",
+          "zeile": 2058,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket xtf_basket  NO_OP xtf_id xtf_id  NO_OP Bezeichnung Bezeichnung  NO_OP Abkuerzung Abkuerzung  NO_OP Doklink Doklink  NO_OP Bemerkung Bemerkung  NO_OP Typ_Kanton Typ_Kanton  REMOVE Verbindlichkeit Verbindlichkeit  REMOVE OBJECTID OBJECTID  REMOVE rTyp_Kanton rTyp_Kanton  NO_OP Name Name  REMOVE rVerbindlichkeit rVerbindlichkeit  NO_OP"
+          }
+        },
+        {
+          "id": "65",
+          "zeile": 2094,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO $(BASKETStammdaten)"
+          }
+        },
+        {
+          "id": "67",
+          "zeile": 2127,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO $(BASKETStammdaten)"
+          }
+        },
+        {
+          "id": "69",
+          "zeile": 2160,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO $(BASKETStammdaten)"
+          }
+        },
+        {
+          "id": "71",
+          "zeile": 2193,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO $(BASKETStammdaten)"
+          }
+        },
+        {
+          "id": "78",
+          "zeile": 2226,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "79",
+          "zeile": 2316,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rRechtsstatus  RENAME_SET_VALUE Code Code  NO_OP Name Name  REMOVE SortierNr SortierNr  REMOVE Bemerkung Bemerkung  REMOVE"
+          }
+        },
+        {
+          "id": "80",
+          "zeile": 2346,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rTyp  RENAME_SET_VALUE Bemerkung Bemerkung  REMOVE Bezeichnung Bezeichnung  REMOVE Abkuerzung Abkuerzung  NO_OP Doklink Doklink  REMOVE Typ_Kanton Typ_Kanton  REMOVE Verbindlichkeit Verbindlichkeit  REMOVE OBJECTID OBJECTID  REMOVE"
+          }
+        },
+        {
+          "id": "81",
+          "zeile": 2376,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>LES_Typ<closeparen> <at>Value<openparen>Abkuerzung<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "94",
+          "zeile": 2472,
+          "typ": "Creator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "95",
+          "zeile": 2500,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Laermempfindlichkeitsstufen_V2.Geobasisdaten  xtf_basket_id SET_TO $(BASKETgeobasisdaten).$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "96",
+          "zeile": 2530,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Laermempfindlichkeitsstufen_V2.Stammdaten  xtf_basket_id SET_TO $(BASKETStammdaten)"
+          }
+        },
+        {
+          "id": "97",
+          "zeile": 2560,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Laermempfindlichkeitsstufen_V2.TransferMetadaten  xtf_basket_id SET_TO $(BASKETtransfermetadaten).$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "98",
+          "zeile": 2589,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_id RENAME_SET_DEFAULT  xtf_basket_name xtf_topic RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "106",
+          "zeile": 2613,
+          "typ": "ArcStroker",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "STROKE_MODE": "TOLERANCE",
+            "TOLERANCE_VAL": "0.0005"
+          }
+        },
+        {
+          "id": "107",
+          "zeile": 2654,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "111",
+          "zeile": 2683,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Laermempfindlichkeitsstufen_V2.TransferMetadaten.Datenbestand"
+          }
+        },
+        {
+          "id": "117",
+          "zeile": 2716,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Laermempfindlichkeitsstufen_V2.Geobasisdaten.Typ"
+          }
+        },
+        {
+          "id": "121",
+          "zeile": 2752,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Laermempfindlichkeitsstufen_V2.Geobasisdaten.Laermempfindlichkeitszone"
+          }
+        },
+        {
+          "id": "127",
+          "zeile": 2787,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "129",
+          "zeile": 2807,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "131",
+          "zeile": 2827,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "133",
+          "zeile": 2847,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "135",
+          "zeile": 2867,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "137",
+          "zeile": 2887,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id xtf_id  REMOVE Code Code  REMOVE Rechtsstatus Rechtsstatus  NO_OP Bemerkung Bemerkung FME_NULL_VALUE SET_TO LES_Typ LES_Typ  NO_OP OBJECTID OBJECTID  REMOVE"
+          }
+        },
+        {
+          "id": "139",
+          "zeile": 2920,
+          "typ": "UUIDGenerator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "UUID_ATTR": "xtf_id",
+            "UUID_FORMAT": "UUID_ONLY"
+          }
+        },
+        {
+          "id": "138",
+          "zeile": 2948,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "TEST <at>Value<openparen>LES_Typ<closeparen> = keineES\nTEST <at>Value<openparen>LES_Typ<closeparen> = keine_ES"
+          }
+        },
+        {
+          "id": "145",
+          "zeile": 2994,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket xtf_basket  NO_OP Rechtsstatus Rechtsstatus  REMOVE Bemerkung Bemerkung  NO_OP LES_Typ LES_Typ  REMOVE xtf_id xtf_id  NO_OP rRechtsstatus rRechtsstatus  NO_OP Code Code  REMOVE rTyp rTyp  NO_OP Abkuerzung Abkuerzung  REMOVE"
+          }
+        },
+        {
+          "id": "155",
+          "zeile": 3029,
+          "typ": "AreaOnAreaOverlayer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ACCUM_ATTRS_NAME": "Use Attributes From One Feature",
+            "CLEANING_TOLERANCE": "0",
+            "CONNECT_Z_MODE": "First Wins"
+          }
+        },
+        {
+          "id": "150",
+          "zeile": 3084,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "TEST <at>Value<openparen>_overlaps<closeparen> > 1"
+          }
+        },
+        {
+          "id": "164",
+          "zeile": 3128,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "166",
+          "zeile": 3147,
+          "typ": "TestFilter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "DEFAULT_VALUE": "<lt>UNFILTERED<gt>"
+          }
+        }
+      ],
+      "links": [
+        {
+          "IDENTIFIER": "99",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "95",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "100",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "97",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "101",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "96",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "125",
+          "SOURCE_NODE": "142",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "37",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "87",
+          "SOURCE_NODE": "147",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "80",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "50",
+          "SOURCE_NODE": "147",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "43",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "146",
+          "SOURCE_NODE": "152",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "138",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "55",
+          "SOURCE_NODE": "160",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "53",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "70",
+          "SOURCE_NODE": "160",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "69",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "68",
+          "SOURCE_NODE": "163",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "67",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "86",
+          "SOURCE_NODE": "163",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "79",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "61",
+          "SOURCE_NODE": "165",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "57",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "72",
+          "SOURCE_NODE": "165",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "71",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "45",
+          "SOURCE_NODE": "169",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "44",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "66",
+          "SOURCE_NODE": "169",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "65",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "83",
+          "SOURCE_NODE": "32",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "78",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "40",
+          "SOURCE_NODE": "37",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "39",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "42",
+          "SOURCE_NODE": "39",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "41",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "48",
+          "SOURCE_NODE": "41",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "47",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "54",
+          "SOURCE_NODE": "43",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "52",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "46",
+          "SOURCE_NODE": "44",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "41",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "115",
+          "SOURCE_NODE": "47",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "111",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "59",
+          "SOURCE_NODE": "52",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "58",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "56",
+          "SOURCE_NODE": "53",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "52",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "60",
+          "SOURCE_NODE": "57",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "58",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "63",
+          "SOURCE_NODE": "58",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "62",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "119",
+          "SOURCE_NODE": "62",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "117",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "73",
+          "SOURCE_NODE": "65",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "14",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "74",
+          "SOURCE_NODE": "67",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "11",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "75",
+          "SOURCE_NODE": "69",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "9",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "76",
+          "SOURCE_NODE": "71",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "13",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "82",
+          "SOURCE_NODE": "78",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "81",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "84",
+          "SOURCE_NODE": "79",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "78",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "85",
+          "SOURCE_NODE": "80",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "81",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "148",
+          "SOURCE_NODE": "81",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "145",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "102",
+          "SOURCE_NODE": "95",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "98",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "104",
+          "SOURCE_NODE": "96",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "98",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "103",
+          "SOURCE_NODE": "97",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "98",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "105",
+          "SOURCE_NODE": "98",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "6",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "112",
+          "SOURCE_NODE": "106",
+          "SOURCE_PORT_DESC": "fo 0 STROKED",
+          "TARGET_NODE": "107",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "123",
+          "SOURCE_NODE": "107",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "121",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "116",
+          "SOURCE_NODE": "111",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "15",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "120",
+          "SOURCE_NODE": "117",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "10",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "124",
+          "SOURCE_NODE": "121",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "12",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "140",
+          "SOURCE_NODE": "137",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "139",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "141",
+          "SOURCE_NODE": "139",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "32",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "154",
+          "SOURCE_NODE": "139",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "155",
+          "TARGET_PORT_DESC": "fi 0 AREA",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "149",
+          "SOURCE_NODE": "145",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "106",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "151",
+          "SOURCE_NODE": "155",
+          "SOURCE_PORT_DESC": "fo 0 AREA",
+          "TARGET_NODE": "150",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "168",
+          "SOURCE_NODE": "166",
+          "SOURCE_PORT_DESC": "fo 0 Code<lt>space<gt>darf<lt>space<gt>keine<lt>space<gt>ES<lt>space<gt>haben",
+          "TARGET_NODE": "164",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "136",
+          "SOURCE_NODE": "41",
+          "SOURCE_PORT_DESC": "fo 1 UNMERGED_REQUESTOR",
+          "TARGET_NODE": "135",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "134",
+          "SOURCE_NODE": "52",
+          "SOURCE_PORT_DESC": "fo 1 UNMERGED_REQUESTOR",
+          "TARGET_NODE": "133",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "132",
+          "SOURCE_NODE": "58",
+          "SOURCE_PORT_DESC": "fo 1 UNMERGED_REQUESTOR",
+          "TARGET_NODE": "131",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "130",
+          "SOURCE_NODE": "78",
+          "SOURCE_PORT_DESC": "fo 1 UNMERGED_REQUESTOR",
+          "TARGET_NODE": "129",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "128",
+          "SOURCE_NODE": "81",
+          "SOURCE_PORT_DESC": "fo 1 UNMERGED_REQUESTOR",
+          "TARGET_NODE": "127",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "143",
+          "SOURCE_NODE": "138",
+          "SOURCE_PORT_DESC": "fo 1 FAILED",
+          "TARGET_NODE": "137",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "167",
+          "SOURCE_NODE": "138",
+          "SOURCE_PORT_DESC": "fo 1 FAILED",
+          "TARGET_NODE": "166",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        }
+      ],
+      "defaults": {
+        "Bfs_Nr": {
+          "zeile": 4062,
+          "wert": "brunnen-nord"
+        },
+        "Stammdaten": {
+          "zeile": 4068,
+          "wert": "http://data.geo.sz.ch/public/Themen/A021c/Stammdaten.xtf"
+        },
+        "BASKETgeobasisdaten": {
+          "zeile": 4070,
+          "wert": "ch.sz.a021c.geobasisdaten"
+        },
+        "BASKETtransfermetadaten": {
+          "zeile": 4072,
+          "wert": "ch.sz.a021c.transfermetadaten"
+        },
+        "BASKETStammdaten": {
+          "zeile": 4074,
+          "wert": "ch.sz.a021.stammdaten.2026-09-09"
+        }
+      },
+      "hinweis": "FME-Schema ist keine Bestätigung des tatsächlichen GDB-Schemas. Linkerreichbarkeit allein unterscheidet nicht Requestor- und Supplier-Objekte; Ports beachten."
+    },
+    "SNP": {
+      "datei": "filegdbV1_to_xtf_SNP_V1.fmw",
+      "sha256_bereinigte_datei": "4cf302bce4e9ed2942a3748fe9e55fdd92450b4519ff99c7252dce2ea17bf8d3",
+      "reader_datasets": [
+        {
+          "ROLE": "READER",
+          "FORMAT": "ch.ehi.fme.Main",
+          "DATASET": "$(ImportStammdaten)",
+          "KEYWORD": "ch.ehi.fme.Main_2",
+          "ENABLED": "true",
+          "COORDSYS": ""
+        },
+        {
+          "ROLE": "READER",
+          "FORMAT": "FILEGDB",
+          "DATASET": "$(SourceDataset_FILEGDB)",
+          "KEYWORD": "FILEGDB_1",
+          "ENABLED": "true",
+          "COORDSYS": "EPSG:2056"
+        },
+        {
+          "ROLE": "WRITER",
+          "FORMAT": "ch.ehi.fme.Main",
+          "DATASET": "$(Stammdaten)",
+          "KEYWORD": "ch.ehi.fme.Main_1",
+          "ENABLED": "true",
+          "COORDSYS": ""
+        }
+      ],
+      "feature_schema": [
+        {
+          "id": "135",
+          "zeile": 790,
+          "richtung": "writer",
+          "name": "SZ_Sondernutzungsplanung_kommunal_V1.Geobasisdaten.Typ",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Bezeichnung",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Doklink",
+              "fme_typ": "xtf_char(1023)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rTyp_Kt",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "136",
+          "zeile": 815,
+          "richtung": "writer",
+          "name": "SZ_Sondernutzungsplanung_kommunal_V1.Stammdaten.Rechtsstatus",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "138",
+          "zeile": 838,
+          "richtung": "writer",
+          "name": "SZ_Sondernutzungsplanung_kommunal_V1.Stammdaten.Lieferinhalt",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(40)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "139",
+          "zeile": 861,
+          "richtung": "writer",
+          "name": "SZ_Sondernutzungsplanung_kommunal_V1.Stammdaten.Typ_Kanton",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "Symbol",
+              "fme_typ": "xtf_buffer"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "142",
+          "zeile": 886,
+          "richtung": "writer",
+          "name": "SZ_Sondernutzungsplanung_kommunal_V1.TransferMetadaten.Datenbestand",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Stand",
+              "fme_typ": "xtf_date"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rLieferinhalt",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "143",
+          "zeile": 908,
+          "richtung": "writer",
+          "name": "SZ_Sondernutzungsplanung_kommunal_V1.Geobasisdaten.Geometrie",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_surface",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "rRechtsstatus",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "rTyp",
+              "fme_typ": "xtf_char(200)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "148",
+          "zeile": 930,
+          "richtung": "writer",
+          "name": "XTF_BASKETS",
+          "keyword": "ch.ehi.fme.Main_1",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_topic",
+              "fme_typ": "xtf_char(90)"
+            },
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "xtf_startstate",
+              "fme_typ": "xtf_char(250)"
+            },
+            {
+              "name": "xtf_endstate",
+              "fme_typ": "xtf_char(250)"
+            },
+            {
+              "name": "xtf_consistency",
+              "fme_typ": "xtf_char(12)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "173",
+          "zeile": 953,
+          "richtung": "reader",
+          "name": "SZ_Sondernutzungsplanung_kommunal_V1.Stammdaten.Katalogeintrag",
+          "keyword": "ch.ehi.fme.Main_2",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(255)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(40)"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "174",
+          "zeile": 980,
+          "richtung": "reader",
+          "name": "SZ_Sondernutzungsplanung_kommunal_V1.Stammdaten.Typ_Kanton",
+          "keyword": "ch.ehi.fme.Main_2",
+          "enabled": "true",
+          "geometrie_fme": "xtf_none",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "xtf_char(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "Name",
+              "fme_typ": "xtf_char(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "xtf_char(12)"
+            },
+            {
+              "name": "SortierNr",
+              "fme_typ": "xtf_int32"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "xtf_char(1000)"
+            },
+            {
+              "name": "Symbol",
+              "fme_typ": "xtf_buffer"
+            }
+          ],
+          "where": []
+        },
+        {
+          "id": "162",
+          "zeile": 1009,
+          "richtung": "reader",
+          "name": "SNP_Flächen",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": null,
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Typ",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Rechtsstatus",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "177",
+          "zeile": 1039,
+          "richtung": "reader",
+          "name": "SNP_TM_Datenbestand",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": "geodb_no_geom",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Stand",
+              "fme_typ": "date"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "Lieferinhalt",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        },
+        {
+          "id": "178",
+          "zeile": 1069,
+          "richtung": "reader",
+          "name": "SNP_Typ",
+          "keyword": "FILEGDB_1",
+          "enabled": "true",
+          "geometrie_fme": "geodb_no_geom",
+          "felder": [
+            {
+              "name": "xtf_id",
+              "fme_typ": "text(200)"
+            },
+            {
+              "name": "Code",
+              "fme_typ": "text(12)"
+            },
+            {
+              "name": "Bezeichnung",
+              "fme_typ": "text(80)"
+            },
+            {
+              "name": "Abkuerzung",
+              "fme_typ": "text(12)"
+            },
+            {
+              "name": "Doklink",
+              "fme_typ": "text(1023)"
+            },
+            {
+              "name": "Bemerkung",
+              "fme_typ": "text(1000)"
+            },
+            {
+              "name": "OBJECTID",
+              "fme_typ": "objectid"
+            }
+          ],
+          "where": [
+            ""
+          ]
+        }
+      ],
+      "transformer": [
+        {
+          "id": "61",
+          "zeile": 1354,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_id SET_TO ch.sz.a202a.transfermetadaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "80",
+          "zeile": 1386,
+          "typ": "AttributeValueMapper",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "LUT": "<at>Value<openparen>Lieferinhalt<closeparen>,<at>GetWord<openparen><at>Value<openparen>Lieferinhalt<closeparen><comma>1<closeparen>",
+            "SRC": "Lieferinhalt",
+            "VAL_ATTR": "Lieferinhalt"
+          }
+        },
+        {
+          "id": "73",
+          "zeile": 1416,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rLieferinhalt RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "83",
+          "zeile": 1442,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "74",
+          "zeile": 1473,
+          "typ": "DateTimeConverter",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "DATETIME_ATTR": "Stand",
+            "OUT_FORMAT": "%Y-%m-%d",
+            "REPAIR_INPUT": "YES"
+          }
+        },
+        {
+          "id": "100",
+          "zeile": 1525,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Code_Kanton<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "103",
+          "zeile": 1633,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rTyp_Kt RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "102",
+          "zeile": 1661,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_id SET_TO ch.sz.a202a.geobasisdaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "110",
+          "zeile": 1695,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "120",
+          "zeile": 1729,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO ch.sz.a202.stammdaten.2000-01-01"
+          }
+        },
+        {
+          "id": "123",
+          "zeile": 1761,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO ch.sz.a202.stammdaten.2000-01-01"
+          }
+        },
+        {
+          "id": "125",
+          "zeile": 1793,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "CASE_INSENSITIVE_TEST <at>Value<openparen>Code<closeparen> BEGINS_WITH 13"
+          }
+        },
+        {
+          "id": "151",
+          "zeile": 1833,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rRechtsstatus RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "155",
+          "zeile": 1856,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Code,Lieferinhalt,Name,OBJECTID,SortierNr"
+          }
+        },
+        {
+          "id": "163",
+          "zeile": 1881,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Sondernutzungsplanung_kommunal_V1.TransferMetadaten.Datenbestand"
+          }
+        },
+        {
+          "id": "159",
+          "zeile": 1913,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Sondernutzungsplanung_kommunal_V1.Geobasisdaten.Typ"
+          }
+        },
+        {
+          "id": "157",
+          "zeile": 1949,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_id SET_TO ch.sz.a202a.geobasisdaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "180",
+          "zeile": 1981,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Rechtsstatus<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "185",
+          "zeile": 2063,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_basket RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "187",
+          "zeile": 2089,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_class SET_TO SZ_Sondernutzungsplanung_kommunal_V1.Geobasisdaten.Geometrie"
+          }
+        },
+        {
+          "id": "273",
+          "zeile": 2121,
+          "typ": "CoordinateRounder",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "XPREC": "3",
+            "YPREC": "3",
+            "ZPREC": "3"
+          }
+        },
+        {
+          "id": "269",
+          "zeile": 2148,
+          "typ": "ArcStroker",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "STROKE_MODE": "TOLERANCE",
+            "TOLERANCE_VAL": "0.0005"
+          }
+        },
+        {
+          "id": "119",
+          "zeile": 2186,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket SET_TO ch.sz.a202.stammdaten.2000-01-01"
+          }
+        },
+        {
+          "id": "129",
+          "zeile": 2220,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_id rTyp  RENAME_SET_VALUE Code Code  NO_OP Bezeichnung Bezeichnung  NO_OP Abkuerzung Abkuerzung  REMOVE Doklink Doklink  REMOVE Bemerkung Bemerkung  REMOVE OBJECTID OBJECTID  REMOVE"
+          }
+        },
+        {
+          "id": "92",
+          "zeile": 2250,
+          "typ": "Creator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "93",
+          "zeile": 2277,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Sondernutzungsplanung_kommunal_V1.Geobasisdaten  xtf_basket_id SET_TO ch.sz.a202a.geobasisdaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "94",
+          "zeile": 2306,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Sondernutzungsplanung_kommunal_V1.Stammdaten  xtf_basket_id SET_TO ch.sz.a202.stammdaten.2000-01-01"
+          }
+        },
+        {
+          "id": "95",
+          "zeile": 2335,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" xtf_basket_name SET_TO SZ_Sondernutzungsplanung_kommunal_V1.TransferMetadaten  xtf_basket_id SET_TO ch.sz.a202a.transfermetadaten.$(Bfs_Nr)"
+          }
+        },
+        {
+          "id": "96",
+          "zeile": 2363,
+          "typ": "AttributeRenamer",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "xtf_basket_id xtf_id RENAME_SET_DEFAULT  xtf_basket_name xtf_topic RENAME_SET_DEFAULT "
+          }
+        },
+        {
+          "id": "150",
+          "zeile": 2386,
+          "typ": "AttributeCreator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "\"\" Code_Kanton SET_TO <at>Substring<openparen><at>Value<openparen>Code<closeparen><comma>0<comma>4<closeparen>"
+          }
+        },
+        {
+          "id": "107",
+          "zeile": 2421,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Name,OBJECTID,SortierNr,Code_Kanton"
+          }
+        },
+        {
+          "id": "114",
+          "zeile": 2450,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Code,Rechtsstatus"
+          }
+        },
+        {
+          "id": "133",
+          "zeile": 2475,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Typ<closeparen> <at>Value<openparen>Code<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "131",
+          "zeile": 2564,
+          "typ": "Tester",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "BOOL_OP": "OR",
+            "TEST_CLAUSE": "TEST <at>Value<openparen>Code<closeparen> = AenderungMitVorwirkung\nTEST <at>Value<openparen>Code<closeparen> = AenderungOhneVorwirkung\nTEST <at>Value<openparen>Code<closeparen> = inKraft"
+          }
+        },
+        {
+          "id": "109",
+          "zeile": 2602,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Code,OBJECTID,Typ,Bezeichnung"
+          }
+        },
+        {
+          "id": "156",
+          "zeile": 2627,
+          "typ": "AttributeRemover",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "REMOVE_ATTRS": "Bemerkung,Name,SortierNr,xtf_basket"
+          }
+        },
+        {
+          "id": "140",
+          "zeile": 2649,
+          "typ": "FeatureMerger",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "JOIN_KEYS": "<at>Value<openparen>Lieferinhalt<closeparen> <at>Value<openparen>Name<closeparen> AUTO",
+            "PROCESS_DUPS": "NO",
+            "REJECT_NULL_MISSING_KEYS": "No",
+            "ATTR_CONFLICT_RES": "Use Requestor"
+          }
+        },
+        {
+          "id": "141",
+          "zeile": 2744,
+          "typ": "Terminator",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "161",
+          "zeile": 2760,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {}
+        },
+        {
+          "id": "116",
+          "zeile": 2793,
+          "typ": "AttributeManager",
+          "enabled": "true",
+          "parameter_fme_kodiert": {
+            "ATTR_TABLE": "rTyp rTyp  varchar<openparen>200<closeparen> NO_OP Code Code  varchar(200) NO_OP Bezeichnung Bezeichnung  varchar<openparen>80<closeparen> NO_OP"
+          }
+        }
+      ],
+      "links": [
+        {
+          "IDENTIFIER": "97",
+          "SOURCE_NODE": "92",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "93",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "98",
+          "SOURCE_NODE": "92",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "95",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "99",
+          "SOURCE_NODE": "92",
+          "SOURCE_PORT_DESC": "fo 0 CREATED",
+          "TARGET_NODE": "94",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "190",
+          "SOURCE_NODE": "162",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "157",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "124",
+          "SOURCE_NODE": "173",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "123",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "126",
+          "SOURCE_NODE": "173",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "73",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "134",
+          "SOURCE_NODE": "173",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "131",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "104",
+          "SOURCE_NODE": "174",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "103",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "121",
+          "SOURCE_NODE": "174",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "119",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "63",
+          "SOURCE_NODE": "177",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "61",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "117",
+          "SOURCE_NODE": "178",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "129",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "106",
+          "SOURCE_NODE": "178",
+          "SOURCE_PORT_DESC": "-1",
+          "TARGET_NODE": "102",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "78",
+          "SOURCE_NODE": "61",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "80",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "81",
+          "SOURCE_NODE": "73",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "140",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "158",
+          "SOURCE_NODE": "74",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "155",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "82",
+          "SOURCE_NODE": "80",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "140",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "77",
+          "SOURCE_NODE": "83",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "74",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "101",
+          "SOURCE_NODE": "93",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "96",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "144",
+          "SOURCE_NODE": "94",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "96",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "111",
+          "SOURCE_NODE": "95",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "96",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "146",
+          "SOURCE_NODE": "96",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "148",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "145",
+          "SOURCE_NODE": "100",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "110",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "152",
+          "SOURCE_NODE": "102",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "150",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "105",
+          "SOURCE_NODE": "103",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "100",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "166",
+          "SOURCE_NODE": "107",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "159",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "168",
+          "SOURCE_NODE": "109",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "180",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "113",
+          "SOURCE_NODE": "110",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "107",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "186",
+          "SOURCE_NODE": "114",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "185",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "181",
+          "SOURCE_NODE": "116",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "133",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "149",
+          "SOURCE_NODE": "119",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "139",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "122",
+          "SOURCE_NODE": "120",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "136",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "169",
+          "SOURCE_NODE": "120",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "156",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "132",
+          "SOURCE_NODE": "123",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "125",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "127",
+          "SOURCE_NODE": "125",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "138",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "175",
+          "SOURCE_NODE": "129",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "116",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "118",
+          "SOURCE_NODE": "131",
+          "SOURCE_PORT_DESC": "fo 0 PASSED",
+          "TARGET_NODE": "120",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "154",
+          "SOURCE_NODE": "133",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "109",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "79",
+          "SOURCE_NODE": "140",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "83",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "153",
+          "SOURCE_NODE": "150",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "100",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "182",
+          "SOURCE_NODE": "151",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "180",
+          "TARGET_PORT_DESC": "fi 1 SUPPLIER",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "164",
+          "SOURCE_NODE": "155",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "163",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "171",
+          "SOURCE_NODE": "156",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "151",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "170",
+          "SOURCE_NODE": "157",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "161",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "167",
+          "SOURCE_NODE": "159",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "135",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "192",
+          "SOURCE_NODE": "161",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "133",
+          "TARGET_PORT_DESC": "fi 0 REQUESTOR",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "165",
+          "SOURCE_NODE": "163",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "142",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "184",
+          "SOURCE_NODE": "180",
+          "SOURCE_PORT_DESC": "fo 0 MERGED",
+          "TARGET_NODE": "114",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "188",
+          "SOURCE_NODE": "185",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "187",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "295",
+          "SOURCE_NODE": "187",
+          "SOURCE_PORT_DESC": "fo 0 OUTPUT",
+          "TARGET_NODE": "269",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "296",
+          "SOURCE_NODE": "269",
+          "SOURCE_PORT_DESC": "fo 0 STROKED",
+          "TARGET_NODE": "273",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "280",
+          "SOURCE_NODE": "273",
+          "SOURCE_PORT_DESC": "fo 0 ROUNDED",
+          "TARGET_NODE": "143",
+          "TARGET_PORT_DESC": "-1",
+          "ENABLED": "true"
+        },
+        {
+          "IDENTIFIER": "160",
+          "SOURCE_NODE": "180",
+          "SOURCE_PORT_DESC": "fo 1 UNMERGED_REQUESTOR",
+          "TARGET_NODE": "141",
+          "TARGET_PORT_DESC": "fi 0 ",
+          "ENABLED": "true"
+        }
+      ],
+      "defaults": {
+        "ImportStammdaten": {
+          "zeile": 3620,
+          "wert": "http://data.geo.sz.ch/public/Themen/A202a/Stammdaten.xtf"
+        },
+        "Bfs_Nr": {
+          "zeile": 3622,
+          "wert": "1301"
+        },
+        "Stammdaten": {
+          "zeile": 3626,
+          "wert": "AUSGABEPFAD_PLATZHALTER (nicht reproduziert)"
+        }
+      },
+      "hinweis": "FME-Schema ist keine Bestätigung des tatsächlichen GDB-Schemas. Linkerreichbarkeit allein unterscheidet nicht Requestor- und Supplier-Objekte; Ports beachten."
+    }
+  }
+}
